@@ -1,2 +1,2 @@
 # avidemux-scripting
-Python script to be used with Avidemux
+Python scripts to be used with Avidemux
