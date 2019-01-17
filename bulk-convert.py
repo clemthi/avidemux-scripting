@@ -13,6 +13,7 @@ def convert_file(input_file, output_folder):
     adm.loadVideo(input_file)
     
     # set the video codec
+    # *** configure this ***
     adm.videoCodec("copy")
     
     adm.audioClearTracks()
@@ -20,6 +21,7 @@ def convert_file(input_file, output_folder):
     adm.audioAddTrack(0)
     
     # set the audio codec
+    # *** configure this ***
     adm.audioCodec(0, "copy")
     adm.audioSetDrc(0, 0)
     adm.audioSetShift(0, 0,0)
@@ -32,7 +34,7 @@ def main():
     files = get_folder_content(input_folder, input_ext)
 
     if files is None:
-        gui.displayError("Error", "Folder doesn't containt any ." + input_ext " file")
+        gui.displayError("Error", "Folder doesn't containt any ." + input_ext + " file")
         return 0
 
     output_folder = gui.dirSelect("Select the output folder")
